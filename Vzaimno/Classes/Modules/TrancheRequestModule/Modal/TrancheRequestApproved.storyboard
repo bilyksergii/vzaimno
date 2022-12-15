@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nP8-Zq-0JI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tranche Request Approved View Controller-->
+        <scene sceneID="jem-xg-kIC">
+            <objects>
+                <viewController id="nP8-Zq-0JI" customClass="TrancheRequestApprovedViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1v4-es-gb7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eao-zr-AlZ">
+                                <rect key="frame" x="0.0" y="739.5" width="414" height="156.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iNm-mk-aws">
+                                        <rect key="frame" x="20" y="20" width="374" height="92.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фото отправлены на проверку. Мы скоро с вами свяжемся." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZM-L1-GCI">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWN-3d-94T">
+                                                <rect key="frame" x="0.0" y="48.5" width="374" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="SfT-h6-EVL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                                <state key="normal" title="Продолжить">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButtonAction:" destination="nP8-Zq-0JI" eventType="touchUpInside" id="xdg-0t-vwy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iNm-mk-aws" firstAttribute="leading" secondItem="eao-zr-AlZ" secondAttribute="leading" constant="20" id="26K-SE-ngs"/>
+                                    <constraint firstItem="iNm-mk-aws" firstAttribute="top" secondItem="eao-zr-AlZ" secondAttribute="top" constant="20" id="j2A-p3-i31"/>
+                                    <constraint firstAttribute="trailing" secondItem="iNm-mk-aws" secondAttribute="trailing" constant="20" id="lVc-PL-5xL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pbz-Uh-XRi"/>
+                        <color key="backgroundColor" white="0.2516755604" alpha="0.49999989890000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eao-zr-AlZ" firstAttribute="leading" secondItem="pbz-Uh-XRi" secondAttribute="leading" id="1qN-SY-ddx"/>
+                            <constraint firstAttribute="bottom" secondItem="eao-zr-AlZ" secondAttribute="bottom" id="73D-32-OGb"/>
+                            <constraint firstItem="eao-zr-AlZ" firstAttribute="trailing" secondItem="pbz-Uh-XRi" secondAttribute="trailing" id="GOC-VH-z7V"/>
+                            <constraint firstItem="pbz-Uh-XRi" firstAttribute="bottom" secondItem="iNm-mk-aws" secondAttribute="bottom" constant="10" id="JN3-Uf-WfT"/>
+                            <constraint firstItem="eao-zr-AlZ" firstAttribute="trailing" secondItem="pbz-Uh-XRi" secondAttribute="trailing" id="Kua-py-FtG"/>
+                            <constraint firstItem="eao-zr-AlZ" firstAttribute="leading" secondItem="pbz-Uh-XRi" secondAttribute="leading" id="OGP-Jf-Ky8"/>
+                            <constraint firstAttribute="bottom" secondItem="eao-zr-AlZ" secondAttribute="bottom" id="ox1-uu-hit"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="fWN-3d-94T" id="Bht-bD-UXP"/>
+                        <outlet property="infoLabel" destination="JZM-L1-GCI" id="V92-LC-lSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIj-aH-Tfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

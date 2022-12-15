@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Loan Request View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoanRequestViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FZJ-sG-M59">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-df-U1q">
+                                <rect key="frame" x="32" y="808" width="350" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CD7-9v-jki"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                <state key="normal" title="Заявка">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestLoanButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ges-Fn-15k"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Zvn-uW-gIE">
+                                <rect key="frame" x="32" y="295" width="350" height="306.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какую сумму и на какой срок вы хотите получить?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kny-nA-hls">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-IJ-mQ9">
+                                        <rect key="frame" x="0.0" y="58.5" width="350" height="109"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма (до 1 млн.)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-Py-C2o">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 000 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-3Q-z9C">
+                                                <rect key="frame" x="0.0" y="32.5" width="350" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="La6-1K-25a">
+                                                <rect key="frame" x="-2" y="79" width="354" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="summSliderValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="vgC-Sc-Gyg"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="PhR-tW-URs">
+                                        <rect key="frame" x="0.0" y="197.5" width="350" height="109"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок (до 4 лет)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkR-P1-egi">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 мес." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aD3-0i-Cyc">
+                                                <rect key="frame" x="0.0" y="32.5" width="350" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-yE-2fP">
+                                                <rect key="frame" x="-2" y="79" width="354" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="termSliderValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Gvu-Ca-nfh"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Zvn-uW-gIE" secondAttribute="trailing" constant="32" id="2Uf-2U-owB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nLG-df-U1q" secondAttribute="trailing" constant="32" id="9C3-W5-7OU"/>
+                            <constraint firstItem="FZJ-sG-M59" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GI5-po-Xg7"/>
+                            <constraint firstItem="FZJ-sG-M59" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Ngh-34-KBh"/>
+                            <constraint firstItem="nLG-df-U1q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="Y6b-fG-70X"/>
+                            <constraint firstItem="Zvn-uW-gIE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="ifD-6Q-VDC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nLG-df-U1q" secondAttribute="bottom" constant="10" id="m39-lJ-ujy"/>
+                            <constraint firstItem="Zvn-uW-gIE" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="odG-HF-5gt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="FZJ-sG-M59" id="6OD-ew-o4I"/>
+                        <outlet property="infoLabel" destination="Kny-nA-hls" id="AGp-G5-UFV"/>
+                        <outlet property="maxSummLabel" destination="0h3-Py-C2o" id="YjL-Sg-XYe"/>
+                        <outlet property="maxTermLabel" destination="wkR-P1-egi" id="6oc-1R-1B5"/>
+                        <outlet property="requestLoanButton" destination="nLG-df-U1q" id="v3K-9X-5Y2"/>
+                        <outlet property="summLabel" destination="jxb-3Q-z9C" id="vaq-Us-AAM"/>
+                        <outlet property="summSlider" destination="La6-1K-25a" id="uve-az-pkv"/>
+                        <outlet property="termLabel" destination="aD3-0i-Cyc" id="9A5-JJ-PO6"/>
+                        <outlet property="termSlider" destination="WaX-yE-2fP" id="FHR-MO-bOk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

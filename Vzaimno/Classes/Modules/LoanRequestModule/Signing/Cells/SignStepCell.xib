@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignStepCell" rowHeight="728" id="Sup-eO-6m2" customClass="SignStepCell" customModule="Vzaimno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sup-eO-6m2" id="wRx-MM-n0o">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aW6-aP-d21">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="qjd-bw-xaF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ШАГ 1: ИДЕНТИФИКАЦИЯ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU9-bA-a1z">
+                        <rect key="frame" x="20" y="34" width="374" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-0P-aun">
+                        <rect key="frame" x="0.0" y="65.5" width="414" height="500"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="200" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="33K-uD-DGf" customClass="IntrinsicCollectionView" customModule="Vzaimno" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="209.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2ZZ-EO-by3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="220.5" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b78-dN-lBf" customClass="IntrinsicTableView" customModule="Vzaimno" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="219.5" width="414" height="220.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4GU-1p-jZQ" customClass="IntrinsicTableView" customModule="Vzaimno" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="450" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pxZ-c1-JtI">
+                        <rect key="frame" x="20" y="580.5" width="374" height="132.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIh-Ko-aHx">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="meg-vf-9ro"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                <state key="normal" title="Подписано оффлайн">
+                                    <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signStateButtonAction:" destination="Sup-eO-6m2" eventType="touchUpInside" id="YQV-ct-Zzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nD-9I-sS5">
+                                <rect key="frame" x="0.0" y="59" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IMf-D8-J33"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                <state key="normal" title="Подписать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signButtonAction:" destination="Sup-eO-6m2" eventType="touchUpInside" id="z0I-Px-DQ8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info custom text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gF-7M-Kim">
+                                <rect key="frame" x="0.0" y="118" width="374" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VU9-bA-a1z" firstAttribute="leading" secondItem="wRx-MM-n0o" secondAttribute="leading" constant="20" id="FuM-Td-5Z3"/>
+                    <constraint firstItem="pxZ-c1-JtI" firstAttribute="leading" secondItem="wRx-MM-n0o" secondAttribute="leading" constant="20" id="Gfw-pS-yDA"/>
+                    <constraint firstAttribute="trailing" secondItem="rr2-0P-aun" secondAttribute="trailing" id="O6H-rQ-k8r"/>
+                    <constraint firstAttribute="trailing" secondItem="VU9-bA-a1z" secondAttribute="trailing" constant="20" id="S1d-B0-KZq"/>
+                    <constraint firstAttribute="bottom" secondItem="pxZ-c1-JtI" secondAttribute="bottom" constant="15" id="YUj-dX-rrM"/>
+                    <constraint firstItem="aW6-aP-d21" firstAttribute="leading" secondItem="wRx-MM-n0o" secondAttribute="leading" id="ZJg-GR-SC0"/>
+                    <constraint firstItem="rr2-0P-aun" firstAttribute="leading" secondItem="wRx-MM-n0o" secondAttribute="leading" id="ajU-QI-PJh"/>
+                    <constraint firstItem="aW6-aP-d21" firstAttribute="top" secondItem="wRx-MM-n0o" secondAttribute="top" id="ieO-HC-pkk"/>
+                    <constraint firstItem="VU9-bA-a1z" firstAttribute="top" secondItem="aW6-aP-d21" secondAttribute="bottom" constant="26" id="jp9-PT-Jcx"/>
+                    <constraint firstAttribute="trailing" secondItem="aW6-aP-d21" secondAttribute="trailing" id="m1h-HV-sMy"/>
+                    <constraint firstItem="rr2-0P-aun" firstAttribute="top" secondItem="VU9-bA-a1z" secondAttribute="bottom" constant="15" id="qmy-g4-B2d"/>
+                    <constraint firstAttribute="trailing" secondItem="pxZ-c1-JtI" secondAttribute="trailing" constant="20" id="rfk-zE-O0m"/>
+                    <constraint firstItem="pxZ-c1-JtI" firstAttribute="top" secondItem="rr2-0P-aun" secondAttribute="bottom" constant="15" id="ule-ud-lIi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomTextLabel" destination="9gF-7M-Kim" id="1Rg-hf-1aW"/>
+                <outlet property="collectionView" destination="33K-uD-DGf" id="r1w-4k-fZK"/>
+                <outlet property="customsTableView" destination="4GU-1p-jZQ" id="Bp7-b3-L92"/>
+                <outlet property="docsTableView" destination="b78-dN-lBf" id="qld-nR-38F"/>
+                <outlet property="separatorView" destination="aW6-aP-d21" id="moJ-1y-D9R"/>
+                <outlet property="signButton" destination="4nD-9I-sS5" id="vJn-tQ-8j2"/>
+                <outlet property="signStateButton" destination="PIh-Ko-aHx" id="dRK-66-MOW"/>
+                <outlet property="titleLabel" destination="VU9-bA-a1z" id="bB4-VO-Zhi"/>
+            </connections>
+            <point key="canvasLocation" x="233.33333333333334" y="16.741071428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "selfieWithPasport.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

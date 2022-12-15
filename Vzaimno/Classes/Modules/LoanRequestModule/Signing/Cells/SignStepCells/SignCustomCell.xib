@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignCustomCell" rowHeight="98" id="XSD-qd-DqT" customClass="SignCustomCell" customModule="Vzaimno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSD-qd-DqT" id="vH6-8a-11x">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ziw-80-DcQ">
+                        <rect key="frame" x="20" y="15" width="374" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соглашение на уступку прав" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-GZ-Vkd">
+                                <rect key="frame" x="0.0" y="27" width="325" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTJ-AF-rGr">
+                                <rect key="frame" x="325" y="18.5" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="dy5-fy-fkn"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="customSwitchAction:" destination="XSD-qd-DqT" eventType="valueChanged" id="81C-uM-a04"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ziw-80-DcQ" firstAttribute="top" secondItem="vH6-8a-11x" secondAttribute="top" constant="15" id="A1g-6u-Ruy"/>
+                    <constraint firstAttribute="trailing" secondItem="Ziw-80-DcQ" secondAttribute="trailing" constant="20" id="bGV-yP-Wp4"/>
+                    <constraint firstItem="Ziw-80-DcQ" firstAttribute="leading" secondItem="vH6-8a-11x" secondAttribute="leading" constant="20" id="hVD-Hk-fQg"/>
+                    <constraint firstAttribute="bottom" secondItem="Ziw-80-DcQ" secondAttribute="bottom" constant="15" id="uFy-mw-ySW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="customSwitch" destination="pTJ-AF-rGr" id="yiI-e8-gL7"/>
+                <outlet property="customTextlabel" destination="tjm-GZ-Vkd" id="7zu-cm-zRZ"/>
+            </connections>
+            <point key="canvasLocation" x="260.86956521739131" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

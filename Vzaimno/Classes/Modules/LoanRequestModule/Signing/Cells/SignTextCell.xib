@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignTextCell" rowHeight="100" id="Yv9-8S-kQx" customClass="SignTextCell" customModule="Vzaimno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yv9-8S-kQx" id="2Ps-Zp-XyM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-Ek-h4J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="MP2-De-l0B"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ожидайте звонка менеджера" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-rJ-6f1">
+                        <rect key="frame" x="32" y="40" width="350" height="28"/>
+                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UXr-rJ-6f1" secondAttribute="bottom" constant="32" id="0XU-8z-zjh"/>
+                    <constraint firstItem="YIx-Ek-h4J" firstAttribute="top" secondItem="2Ps-Zp-XyM" secondAttribute="top" id="9TR-j4-9RO"/>
+                    <constraint firstItem="UXr-rJ-6f1" firstAttribute="top" secondItem="YIx-Ek-h4J" secondAttribute="bottom" constant="32" id="DXv-U5-rL7"/>
+                    <constraint firstAttribute="trailing" secondItem="UXr-rJ-6f1" secondAttribute="trailing" constant="32" id="duS-Tt-PI0"/>
+                    <constraint firstItem="YIx-Ek-h4J" firstAttribute="leading" secondItem="2Ps-Zp-XyM" secondAttribute="leading" id="jiw-JH-GWa"/>
+                    <constraint firstAttribute="trailing" secondItem="YIx-Ek-h4J" secondAttribute="trailing" id="xa0-h4-5AU"/>
+                    <constraint firstItem="UXr-rJ-6f1" firstAttribute="leading" secondItem="2Ps-Zp-XyM" secondAttribute="leading" constant="32" id="yIG-Pv-Rn6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoTextLabel" destination="UXr-rJ-6f1" id="hSx-kv-CHa"/>
+                <outlet property="separatorView" destination="YIx-Ek-h4J" id="qit-zO-aGO"/>
+            </connections>
+            <point key="canvasLocation" x="233.33333333333334" y="119.19642857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

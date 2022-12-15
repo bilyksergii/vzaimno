@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Ekibastuz-Regular';
+	src: url('Ekibastuz-Regular.ttf');
+}
+* {
+	font-family: 'Ekibastuz-Regular', sans-serif;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 20px !important;
+}

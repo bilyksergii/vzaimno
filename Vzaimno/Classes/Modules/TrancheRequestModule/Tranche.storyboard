@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+        <array key="Ekibastuz-Regular.ttf">
+            <string>Ekibastuz-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tranche View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="TrancheViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fn-iy-wRs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1847"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-sL-VIq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1805"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6WM-rE-w0p">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="425"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите желаемые условия транша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-0e-xS0">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DlB-9j-HI9">
+                                                        <rect key="frame" x="32" y="37.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма транша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaJ-du-iFc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-8p-nNT">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="xDM-cV-ZMA"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="psL-W8-1QS"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dW4-hS-xik">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="t60-Ae-vt8"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Omf-QG-iod">
+                                                        <rect key="frame" x="32" y="115" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок займа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7R-6D-wIW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZx-W6-KE5">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="Qht-sY-X6n"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="2tT-kz-8wu"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxr-yf-x0g">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="rgn-AF-Weh"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-2P-QQQ">
+                                                        <rect key="frame" x="32" y="192.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Льготный период" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU4-xw-yfU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpC-CC-WvN">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="2LZ-Yx-y7L"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="iqI-H4-WaF"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7M-gi-Qib">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Sm3-cB-4ym"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-ie-Qd2">
+                                                        <rect key="frame" x="32" y="270" width="350" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iud-Tk-qc7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="3gp-om-s3S"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="Ynz-Rf-rbG"/>
+                                                                </constraints>
+                                                                <state key="normal" image="checkbox_unselected"/>
+                                                                <state key="selected" image="checkbox_selected"/>
+                                                                <connections>
+                                                                    <action selector="insuranceButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gc7-JO-JgO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-SK-wCx">
+                                                                <rect key="frame" x="55" y="0.0" width="295" height="40"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="13"/>
+                                                                <state key="normal" title="Оформить страховку">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="insuranceLabelButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="493-Xe-F2k"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж: 10 000,00 руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-VU-Ja6">
+                                                        <rect key="frame" x="32" y="325" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XXp-Sq-Dt8">
+                                                        <rect key="frame" x="32" y="354.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Электронная почта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-89-Vij">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-oC-VwE">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="om4-nc-Pqf"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="SOn-Sk-piE"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-6G-JUR">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="7Cg-ZU-xlj"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plN-L6-ony">
+                                                <rect key="frame" x="0.0" y="440" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="bNg-Bh-9gc"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cw2-nU-84M">
+                                                <rect key="frame" x="0.0" y="463" width="414" height="169"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Секретный вопрос" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eX-zy-5sZ">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Uon-u1-ood">
+                                                        <rect key="frame" x="32" y="37.5" width="350" height="46"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pQ5-ZC-kAb" customClass="TextFieldWithPicker" customModule="Vzaimno" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="tf2-Yb-1I2"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-Ib-bRt">
+                                                                <rect key="frame" x="0.0" y="45" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="fo3-do-uKP"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7bD-eb-dpl">
+                                                        <rect key="frame" x="32" y="98.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ответ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkh-he-BRL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nl-fk-bS6">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="iWb-pu-v3M"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="y60-fk-e5N"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMz-Rm-btN">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Gey-sR-D7z"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxJ-dQ-jA1">
+                                                <rect key="frame" x="0.0" y="647" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="Ibl-vQ-yzO"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uig-fu-i3C">
+                                                <rect key="frame" x="0.0" y="670" width="414" height="250.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите желаемые условия транша" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-Rb-piq">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA0-v7-f7T">
+                                                        <rect key="frame" x="32" y="37.5" width="350" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="OAo-cF-ujZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="На банковскую карту" image="radionButtonDeselected">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" title="На банковскую карту" image="radioButtonSelected">
+                                                            <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bankCardButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ww5-P4-Ujg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6At-bj-1Na">
+                                                        <rect key="frame" x="32" y="92.5" width="350" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="mrM-Pd-Pne"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Расчетный счет" image="radionButtonDeselected">
+                                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" title="Расчетный счет" image="radioButtonSelected">
+                                                            <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bankAccountButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LW0-IC-f7I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSq-nl-Lbp">
+                                                        <rect key="frame" x="32" y="147.5" width="350" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Zyo-Q3-8gN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Система CONTACT" image="radionButtonDeselected">
+                                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" title="Система CONTACT" image="radioButtonSelected">
+                                                            <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="systemContactButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ucA-c3-He5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-01-XM2">
+                                                        <rect key="frame" x="32" y="202.5" width="350" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="q3Y-4L-FdN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Наличными в офисе" image="radionButtonDeselected">
+                                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" title="Наличными в офисе" image="radioButtonSelected">
+                                                            <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cashInOfficeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hlI-zx-k2c"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-Fg-oiV">
+                                                <rect key="frame" x="0.0" y="935.5" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="j18-U2-G55"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-2B-f9v">
+                                                <rect key="frame" x="0.0" y="958.5" width="414" height="263"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите данные карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82O-UL-ccJ">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qYq-LF-Zcl">
+                                                        <rect key="frame" x="32" y="37.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaB-YO-MZ0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0000 0000 0000 0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0T-yy-b7z" customClass="TVMaskTextField" customModule="TVMaskField">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="zrQ-LA-RGQ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="0000 0000 0000 0000"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="qL3-FD-vwK"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj6-31-qrb">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="ssN-Ud-tJe"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nlE-DA-hwX">
+                                                        <rect key="frame" x="32" y="115" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clY-fR-C1J">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="мм/гг" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQL-Qs-2R8" customClass="TVMaskTextField" customModule="TVMaskField">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="2oY-ua-mpj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="00/00"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="6Hh-9L-aTj"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mht-E1-rCl">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Pvr-pT-P6m"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-oH-sMS">
+                                                        <rect key="frame" x="32" y="192.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ф.И.О. Держателя карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeV-mK-Rmb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия Имя (латиница)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-LZ-XUf">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="uKd-xA-Mv3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="hZq-kd-rFi"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sk-1N-2qb">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="j1g-Pt-sGH"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vRt-Tc-Gjg">
+                                                <rect key="frame" x="0.0" y="1236.5" width="414" height="418"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите данные расчетного счета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Po-q4-30Z">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-1X-NAY">
+                                                        <rect key="frame" x="32" y="37.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Банк получатель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-dK-l9p">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-dS-EbN">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="PhJ-74-eCb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="iKp-Nq-fU1"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usk-hb-xI2">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="GER-lY-n5Y"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-qp-p0D">
+                                                        <rect key="frame" x="32" y="115" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Корр. счет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2om-cB-E4m">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhy-Ea-bnZ">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="FmT-nf-Qjw"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="yIs-a3-Eg5"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrk-h1-Q0y">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="LI7-7z-6hd"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rHN-tG-nwW">
+                                                        <rect key="frame" x="32" y="192.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="БИК" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-Cq-SMV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRf-Mg-K8q">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="nU8-Kt-4SL"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="kxO-yn-z7r"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-t3-tby">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="aCf-h9-XnJ"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nMB-oI-VnT">
+                                                        <rect key="frame" x="32" y="270" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ф.И.О. получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4U-tV-vcQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия Имя (латиница)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-IN-n4T">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="3cx-yq-u79"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="agp-t2-R2o"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-FP-tjp">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="PxF-kc-GZG"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nRf-Ec-KkX">
+                                                        <rect key="frame" x="32" y="347.5" width="350" height="62.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Счет получателя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl6-lR-MqU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-F7-J7w">
+                                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="lLm-Ks-1xv"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Jnf-zU-bBr"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AP-AY-0xQ">
+                                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="QiJ-b7-ZFp"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="667-IY-YnP">
+                                                <rect key="frame" x="0.0" y="1669.5" width="414" height="90"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w2s-Sh-de3">
+                                                        <rect key="frame" x="32" y="8" width="350" height="74"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город в котором расположен пункт CONTACT,  в котором предполагается получение денежных средств" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjk-sU-aFu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="350" height="23"/>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fc4-o3-ReB">
+                                                                <rect key="frame" x="0.0" y="28" width="350" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="mnl-fL-uE1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="XJF-7Z-33N"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTj-wd-xGD">
+                                                                <rect key="frame" x="0.0" y="73" width="350" height="1"/>
+                                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="8Dc-no-vyZ"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-wS-tcM">
+                                                <rect key="frame" x="0.0" y="1774.5" width="414" height="30.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сможете получить деньги в нашем офисе." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxs-zY-IYN">
+                                                        <rect key="frame" x="32" y="8" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="32" bottom="8" right="32"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p3w-sL-VIq" firstAttribute="top" secondItem="9Fn-iy-wRs" secondAttribute="top" id="Hwv-Yi-hdA"/>
+                                    <constraint firstItem="p3w-sL-VIq" firstAttribute="centerX" secondItem="9Fn-iy-wRs" secondAttribute="centerX" id="PFf-oY-e2W"/>
+                                    <constraint firstItem="p3w-sL-VIq" firstAttribute="leading" secondItem="9Fn-iy-wRs" secondAttribute="leading" id="THK-0I-gkS"/>
+                                    <constraint firstAttribute="trailing" secondItem="p3w-sL-VIq" secondAttribute="trailing" id="eE0-Op-z4Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="p3w-sL-VIq" secondAttribute="bottom" id="eih-FX-lfu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Qza-ch-6Fu"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="SDx-Uc-m3f"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-ck-i9i">
+                                <rect key="frame" x="0.0" y="1900" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-SH-3oV">
+                                        <rect key="frame" x="32" y="20" width="350" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="hbF-lA-ijA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                        <state key="normal" title="Заявка">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="requestButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9mU-Wy-BoD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EXm-IJ-r7b"/>
+                                    <constraint firstItem="Cwg-SH-3oV" firstAttribute="leading" secondItem="SPf-ck-i9i" secondAttribute="leading" constant="32" id="KhQ-qe-xtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cwg-SH-3oV" secondAttribute="trailing" constant="32" id="agG-cb-bai"/>
+                                    <constraint firstItem="Cwg-SH-3oV" firstAttribute="top" secondItem="SPf-ck-i9i" secondAttribute="top" constant="20" id="oUq-7X-TRJ"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Xyf-9X-BTv">
+                                <rect key="frame" x="188.5" y="981.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SPf-ck-i9i" secondAttribute="bottom" id="3Vi-f8-fH3"/>
+                            <constraint firstItem="Xyf-9X-BTv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="B6H-VG-hcI"/>
+                            <constraint firstItem="9Fn-iy-wRs" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="DzU-Ad-aq9"/>
+                            <constraint firstItem="9Fn-iy-wRs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ffc-kX-Gwv"/>
+                            <constraint firstItem="SPf-ck-i9i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MCX-Go-Smr"/>
+                            <constraint firstItem="Xyf-9X-BTv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="lDP-ln-T10"/>
+                            <constraint firstItem="SPf-ck-i9i" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oVj-Uj-ATA"/>
+                            <constraint firstItem="SPf-ck-i9i" firstAttribute="top" secondItem="9Fn-iy-wRs" secondAttribute="bottom" constant="9" id="pGk-b1-Bag"/>
+                            <constraint firstItem="9Fn-iy-wRs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xZY-xw-dRu"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="Xyf-9X-BTv" id="QGB-bE-ntp"/>
+                        <outlet property="bankAccountBankTextField" destination="Wbb-dS-EbN" id="7mw-hf-1Gj"/>
+                        <outlet property="bankAccountBikTextField" destination="FRf-Mg-K8q" id="q1k-ub-rTl"/>
+                        <outlet property="bankAccountButton" destination="6At-bj-1Na" id="6Aq-bZ-Y4P"/>
+                        <outlet property="bankAccountCorrAccountTextField" destination="hhy-Ea-bnZ" id="jiC-rQ-8Gx"/>
+                        <outlet property="bankAccountStackView" destination="vRt-Tc-Gjg" id="KcX-DR-TQt"/>
+                        <outlet property="bankAccountUserAccountTextField" destination="ps8-F7-J7w" id="mFj-Ua-309"/>
+                        <outlet property="bankAccountUserNameTextField" destination="W5u-IN-n4T" id="GL7-SH-OPr"/>
+                        <outlet property="bankCardButton" destination="AA0-v7-f7T" id="cgl-o7-k1d"/>
+                        <outlet property="bankCardStackView" destination="Lxb-2B-f9v" id="7kR-Gm-ZfG"/>
+                        <outlet property="cardDateTextField" destination="IQL-Qs-2R8" id="dL9-zU-Qxr"/>
+                        <outlet property="cardNameTextField" destination="hG9-LZ-XUf" id="M2F-M4-bY3"/>
+                        <outlet property="cardNumberTextField" destination="A0T-yy-b7z" id="rww-vS-9x1"/>
+                        <outlet property="cashInOfficeButton" destination="rRk-01-XM2" id="gDx-Yh-or2"/>
+                        <outlet property="cashInOfficeStackView" destination="WMh-wS-tcM" id="aWc-WU-6pS"/>
+                        <outlet property="contactCityNameTextField" destination="Fc4-o3-ReB" id="Ng5-Ph-gvM"/>
+                        <outlet property="gracePeriodTextField" destination="HpC-CC-WvN" id="CdY-4u-pyc"/>
+                        <outlet property="insuranceButton" destination="iud-Tk-qc7" id="N6R-dD-lop"/>
+                        <outlet property="insuranceContainerView" destination="AFO-ie-Qd2" id="It8-RK-FqK"/>
+                        <outlet property="insuranceEmailTextField" destination="0qW-oC-VwE" id="koR-kO-D7e"/>
+                        <outlet property="insuranceEmailView" destination="XXp-Sq-Dt8" id="qav-yX-Dww"/>
+                        <outlet property="insuranceLabelButton" destination="mLL-SK-wCx" id="NN4-mm-MeM"/>
+                        <outlet property="mainScrollView" destination="9Fn-iy-wRs" id="mUf-6s-sQT"/>
+                        <outlet property="monthlyPaymentLabel" destination="wFx-VU-Ja6" id="AF0-rK-oqN"/>
+                        <outlet property="requestButton" destination="Cwg-SH-3oV" id="xDF-M1-Y3x"/>
+                        <outlet property="secretAnswerTextField" destination="8nl-fk-bS6" id="VP1-ok-H2Q"/>
+                        <outlet property="secretQuestionContainerView" destination="cw2-nU-84M" id="8aj-o8-6Nx"/>
+                        <outlet property="secretQuestionPicker" destination="pQ5-ZC-kAb" id="AEK-wV-Cge"/>
+                        <outlet property="secretQuestionSeparator" destination="PxJ-dQ-jA1" id="rgt-V2-8Ge"/>
+                        <outlet property="summTextField" destination="Ngj-8p-nNT" id="3sX-wW-Pph"/>
+                        <outlet property="systemContactButton" destination="tSq-nl-Lbp" id="D3v-Dy-H8x"/>
+                        <outlet property="systemContactStackView" destination="667-IY-YnP" id="UTB-JC-Nlu"/>
+                        <outlet property="termTextField" destination="kZx-W6-KE5" id="ve7-1c-16S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkbox_selected" width="32" height="32"/>
+        <image name="checkbox_unselected" width="32" height="32"/>
+        <image name="radioButtonSelected" width="32" height="32"/>
+        <image name="radionButtonDeselected" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+        <array key="Ekibastuz-Regular.ttf">
+            <string>Ekibastuz-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Statement View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="StatementViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-N0-w4g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hNT-x5-1iB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="794"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-4n-vQF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                                <subviews>
+                                                    <wkWebView contentMode="scaleToFill" allowsLinkPreview="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3g-91-ek9">
+                                                        <rect key="frame" x="32" y="16" width="350" height="200"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="lDr-GU-JDZ"/>
+                                                        </constraints>
+                                                        <wkWebViewConfiguration key="configuration">
+                                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                            <wkPreferences key="preferences"/>
+                                                        </wkWebViewConfiguration>
+                                                    </wkWebView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="32" bottom="16" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhc-rr-qBM">
+                                                <rect key="frame" x="0.0" y="232" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="RDI-QR-LWj"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="G66-dN-3GK">
+                                                <rect key="frame" x="0.0" y="240" width="414" height="77"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKC-3G-Cp3">
+                                                        <rect key="frame" x="32" y="16" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Статус заявления" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-zH-a3B">
+                                                        <rect key="frame" x="32" y="46.5" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="32" bottom="16" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvO-3r-EZH">
+                                                <rect key="frame" x="0.0" y="317" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="KGU-JH-mmS"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="250" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JRI-aX-eVK">
+                                                <rect key="frame" x="0.0" y="325" width="414" height="262.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Ответ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-Qf-qfP">
+                                                        <rect key="frame" x="32" y="16" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <wkWebView contentMode="scaleToFill" allowsLinkPreview="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INs-Qx-VJn">
+                                                        <rect key="frame" x="32" y="46.5" width="350" height="200"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="KVT-O1-IKb"/>
+                                                        </constraints>
+                                                        <wkWebViewConfiguration key="configuration">
+                                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                            <wkPreferences key="preferences"/>
+                                                        </wkWebViewConfiguration>
+                                                    </wkWebView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="32" bottom="16" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evv-RQ-ymb">
+                                                <rect key="frame" x="0.0" y="587.5" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="VMG-uI-NBu"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EyG-dh-i8I">
+                                                <rect key="frame" x="0.0" y="595.5" width="414" height="190.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Прикрепленные файлы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-Sd-b1l">
+                                                        <rect key="frame" x="32" y="16" width="350" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="128" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IJm-hW-Xy5" customClass="IntrinsicTableView" customModule="Vzaimno" customModuleProvider="target">
+                                                        <rect key="frame" x="32" y="46.5" width="350" height="128"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="StatementsFileCell" id="4Bv-P6-gUL" customClass="StatementsFileCell" customModule="Vzaimno" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="44.5" width="350" height="34.5"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Bv-P6-gUL" id="8Xu-Rg-V32">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="34.5"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="имя файла.doc" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-Wj-6hx">
+                                                                            <rect key="frame" x="0.0" y="10" width="350" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                                                            <color key="textColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="rE0-Wj-6hx" secondAttribute="bottom" constant="10" id="8EG-4Y-Gar"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="rE0-Wj-6hx" secondAttribute="trailing" id="QLr-GE-wgF"/>
+                                                                        <constraint firstItem="rE0-Wj-6hx" firstAttribute="top" secondItem="8Xu-Rg-V32" secondAttribute="top" constant="10" id="VoW-3U-UND"/>
+                                                                        <constraint firstItem="rE0-Wj-6hx" firstAttribute="leading" secondItem="8Xu-Rg-V32" secondAttribute="leading" id="qLh-TW-Wet"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="fileNameLabel" destination="rE0-Wj-6hx" id="ld9-cR-rm0"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
+                                                    </tableView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="32" bottom="16" right="32"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hS1-1e-Add">
+                                                <rect key="frame" x="0.0" y="786" width="414" height="8"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="8" id="6Oy-Wn-2F9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hNT-x5-1iB" firstAttribute="centerX" secondItem="kyi-N0-w4g" secondAttribute="centerX" id="UtA-JV-rAk"/>
+                                    <constraint firstItem="hNT-x5-1iB" firstAttribute="leading" secondItem="kyi-N0-w4g" secondAttribute="leading" id="VF6-3X-DH1"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNT-x5-1iB" secondAttribute="bottom" id="cTZ-Gx-XJi"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNT-x5-1iB" secondAttribute="trailing" id="fmG-zl-Dop"/>
+                                    <constraint firstItem="hNT-x5-1iB" firstAttribute="top" secondItem="kyi-N0-w4g" secondAttribute="top" id="wfg-tW-p2K"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Ugo-c2-iyg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="zGH-mf-7d3"/>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-aW-YBR">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kyi-N0-w4g" secondAttribute="bottom" id="3nA-s7-exV"/>
+                            <constraint firstItem="kyi-N0-w4g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UMI-jt-ssv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kyi-N0-w4g" secondAttribute="trailing" id="V9Q-Ib-eVP"/>
+                            <constraint firstItem="VH9-aW-YBR" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="kt5-74-R7E"/>
+                            <constraint firstItem="kyi-N0-w4g" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rmn-bh-o1g"/>
+                            <constraint firstItem="VH9-aW-YBR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tzE-wN-ImC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="VH9-aW-YBR" id="3o1-JR-LRL"/>
+                        <outlet property="answerContainerStackView" destination="JRI-aX-eVK" id="6SX-QD-pMi"/>
+                        <outlet property="answerHeightConstraint" destination="KVT-O1-IKb" id="bHZ-Ip-mzk"/>
+                        <outlet property="answerSeparatorView" destination="evv-RQ-ymb" id="ejf-8h-564"/>
+                        <outlet property="answerWebView" destination="INs-Qx-VJn" id="ALS-9J-VY5"/>
+                        <outlet property="filesContainerStackView" destination="EyG-dh-i8I" id="Hcx-U7-vLr"/>
+                        <outlet property="filesSeparatorView" destination="hS1-1e-Add" id="iyy-LK-8Nf"/>
+                        <outlet property="filesTableView" destination="IJm-hW-Xy5" id="CiR-ey-bc8"/>
+                        <outlet property="mainStackView" destination="hNT-x5-1iB" id="tFi-35-58g"/>
+                        <outlet property="statementHeightConstraint" destination="lDr-GU-JDZ" id="sIO-5h-6rb"/>
+                        <outlet property="statementWebView" destination="e3g-91-ek9" id="L40-P5-saS"/>
+                        <outlet property="statusLabel" destination="cgc-zH-a3B" id="WoN-Me-IuF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="2.6785714285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

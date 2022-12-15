@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Full Image View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FullImageViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhi-qe-GzL">
+                                <rect key="frame" x="0.0" y="172" width="414" height="552"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jhi-qe-GzL" secondAttribute="height" multiplier="3:4" id="1yG-I2-wx7"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="opr-6o-uJZ">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="66M-Rq-g96"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lp-fN-lv6">
+                                <rect key="frame" x="364" y="182" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SMS-RX-gua"/>
+                                    <constraint firstAttribute="width" constant="40" id="TCM-8M-1g1"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jK5-PV-idF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.25352675249787415" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="opr-6o-uJZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="L7e-a1-W5t"/>
+                            <constraint firstItem="jhi-qe-GzL" firstAttribute="top" secondItem="7lp-fN-lv6" secondAttribute="bottom" constant="-50" id="U7Q-cJ-vJx"/>
+                            <constraint firstItem="7lp-fN-lv6" firstAttribute="leading" secondItem="jhi-qe-GzL" secondAttribute="trailing" constant="-50" id="ZDo-4t-kxs"/>
+                            <constraint firstItem="jhi-qe-GzL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZGK-Af-0de"/>
+                            <constraint firstItem="opr-6o-uJZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="a8N-x6-TdN"/>
+                            <constraint firstItem="jhi-qe-GzL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cDQ-Vc-Bab"/>
+                            <constraint firstItem="jhi-qe-GzL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ldb-LS-F7U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="opr-6o-uJZ" id="2S5-ng-ipa"/>
+                        <outlet property="photoImageView" destination="jhi-qe-GzL" id="vOk-PG-S2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="closeButton" width="20" height="20"/>
+    </resources>
+</document>

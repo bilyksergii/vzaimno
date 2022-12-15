@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	line-height: 20px !important;
+}
+@font-face {
+	font-family: 'Ekibastuz-Bold';
+	src: url('Ekibastuz-Bold.ttf');
+}
+p {
+	font-family: 'Ekibastuz-Bold', sans-serif;
+	font-size: 15px;
+	margin: 20px;
+	padding: 1px;
+}
+h2 {
+	font-family: 'Ekibastuz-Heavy', sans-serif;
+	font-size: 20px;
+	margin: 20px;
+	padding: 0px;
+}

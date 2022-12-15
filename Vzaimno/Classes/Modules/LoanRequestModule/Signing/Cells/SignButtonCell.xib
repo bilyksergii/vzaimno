@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignButtonCell" rowHeight="108" id="MbO-lB-CZx" customClass="SignButtonCell" customModule="Vzaimno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MbO-lB-CZx" id="NXW-8K-Gdj">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-Oz-3JG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="cuB-7s-f4Q"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOs-ZE-KHG">
+                        <rect key="frame" x="20" y="40" width="374" height="44"/>
+                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="gHb-2x-0U7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                        <state key="normal" title="Заявка на транш">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="actionButtonAction:" destination="MbO-lB-CZx" eventType="touchUpInside" id="LsA-Io-qbs"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QOs-ZE-KHG" secondAttribute="trailing" constant="20" id="6r6-xM-aW1"/>
+                    <constraint firstItem="iMe-Oz-3JG" firstAttribute="leading" secondItem="NXW-8K-Gdj" secondAttribute="leading" id="ANS-uD-M6c"/>
+                    <constraint firstItem="QOs-ZE-KHG" firstAttribute="top" secondItem="iMe-Oz-3JG" secondAttribute="bottom" constant="32" id="DcW-AU-sIG"/>
+                    <constraint firstItem="QOs-ZE-KHG" firstAttribute="leading" secondItem="NXW-8K-Gdj" secondAttribute="leading" constant="20" id="HHl-W8-baO"/>
+                    <constraint firstAttribute="bottom" secondItem="QOs-ZE-KHG" secondAttribute="bottom" constant="32" id="Oz8-9J-FS2"/>
+                    <constraint firstItem="iMe-Oz-3JG" firstAttribute="top" secondItem="NXW-8K-Gdj" secondAttribute="top" id="UoO-GP-AKI"/>
+                    <constraint firstAttribute="trailing" secondItem="iMe-Oz-3JG" secondAttribute="trailing" id="bMg-uX-leY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="QOs-ZE-KHG" id="ejA-tl-qRb"/>
+                <outlet property="separatorView" destination="iMe-Oz-3JG" id="EOm-zy-hmm"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>

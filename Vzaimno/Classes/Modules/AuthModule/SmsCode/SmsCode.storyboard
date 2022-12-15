@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Regular.ttf">
+            <string>Ekibastuz-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sms Code View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SmsCodeViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="pHF-1y-8Bz">
+                                <rect key="frame" x="32" y="76" width="350" height="321.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите полученный код из СМС." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqb-vg-ocp">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-W6-WHa">
+                                        <rect key="frame" x="0.0" y="49.5" width="350" height="11.5"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmS-S9-N5n">
+                                        <rect key="frame" x="0.0" y="96" width="350" height="51"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="24" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0         0         0         0         0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-oI-CkW" customClass="TVMaskTextField" customModule="TVMaskField">
+                                                <rect key="frame" x="68" y="0.0" width="220" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="C1R-dz-PXK"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jqq-xF-Bnh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="0         0         0         0         0"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rF-9d-chB">
+                                                <rect key="frame" x="53" y="50" width="244" height="1"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTY-cv-84t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="W6w-YN-kOr"/>
+                                                            <constraint firstAttribute="width" constant="40" id="oAJ-Xy-k2b"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdm-oG-jzg">
+                                                        <rect key="frame" x="51" y="0.0" width="40" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980392156865" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="M84-HA-HpB"/>
+                                                            <constraint firstAttribute="height" constant="1" id="NZc-hI-wpl"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aee-r6-UhY">
+                                                        <rect key="frame" x="102" y="0.0" width="40" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="egM-aa-31T"/>
+                                                            <constraint firstAttribute="width" constant="40" id="rMk-ad-QlH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-Pl-j2W">
+                                                        <rect key="frame" x="153" y="0.0" width="40" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="dWU-7I-0hj"/>
+                                                            <constraint firstAttribute="width" constant="40" id="vb4-sh-Nkd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbM-Tk-Kbe">
+                                                        <rect key="frame" x="204" y="0.0" width="40" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="44V-uB-7gj"/>
+                                                            <constraint firstAttribute="width" constant="40" id="CJ2-5q-Hcl"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Jdm-oG-jzg" firstAttribute="leading" secondItem="KTY-cv-84t" secondAttribute="trailing" constant="11" id="3HU-en-t2w"/>
+                                                    <constraint firstItem="Aee-r6-UhY" firstAttribute="top" secondItem="8rF-9d-chB" secondAttribute="top" id="Fkq-k3-e2q"/>
+                                                    <constraint firstAttribute="width" constant="244" id="bYC-jv-Oyq"/>
+                                                    <constraint firstItem="KTY-cv-84t" firstAttribute="top" secondItem="8rF-9d-chB" secondAttribute="top" id="gaT-Fb-0vt"/>
+                                                    <constraint firstAttribute="height" constant="1" id="h0C-dV-dnu"/>
+                                                    <constraint firstItem="NkL-Pl-j2W" firstAttribute="leading" secondItem="Aee-r6-UhY" secondAttribute="trailing" constant="11" id="id5-qd-yDh"/>
+                                                    <constraint firstItem="tbM-Tk-Kbe" firstAttribute="leading" secondItem="NkL-Pl-j2W" secondAttribute="trailing" constant="11" id="jUZ-VE-4YD"/>
+                                                    <constraint firstItem="tbM-Tk-Kbe" firstAttribute="top" secondItem="8rF-9d-chB" secondAttribute="top" id="nYJ-no-XI8"/>
+                                                    <constraint firstItem="KTY-cv-84t" firstAttribute="leading" secondItem="8rF-9d-chB" secondAttribute="leading" id="nh3-5D-mRW"/>
+                                                    <constraint firstItem="NkL-Pl-j2W" firstAttribute="top" secondItem="8rF-9d-chB" secondAttribute="top" id="re2-iB-XMB"/>
+                                                    <constraint firstItem="Jdm-oG-jzg" firstAttribute="top" secondItem="8rF-9d-chB" secondAttribute="top" id="voN-Ba-nui"/>
+                                                    <constraint firstItem="Aee-r6-UhY" firstAttribute="leading" secondItem="Jdm-oG-jzg" secondAttribute="trailing" constant="11" id="vxY-qs-5vA"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8rF-9d-chB" firstAttribute="top" secondItem="Kow-oI-CkW" secondAttribute="bottom" constant="10" id="Cob-Rw-RbB"/>
+                                            <constraint firstItem="Kow-oI-CkW" firstAttribute="centerX" secondItem="OmS-S9-N5n" secondAttribute="centerX" constant="3" id="kCM-nB-sSL"/>
+                                            <constraint firstAttribute="bottom" secondItem="8rF-9d-chB" secondAttribute="bottom" id="nAp-ma-q8X"/>
+                                            <constraint firstItem="8rF-9d-chB" firstAttribute="centerX" secondItem="OmS-S9-N5n" secondAttribute="centerX" id="uks-Tf-g1h"/>
+                                            <constraint firstItem="Kow-oI-CkW" firstAttribute="top" secondItem="OmS-S9-N5n" secondAttribute="top" id="v7J-xj-CSS"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы ввели не верный СМС код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aja-4t-vWg">
+                                        <rect key="frame" x="0.0" y="182" width="350" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код является Вашим согласием на обработку персональных данных." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t82-bf-12H">
+                                        <rect key="frame" x="0.0" y="231.5" width="350" height="25"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-xO-v5p">
+                                        <rect key="frame" x="0.0" y="291.5" width="350" height="30"/>
+                                        <state key="normal" title="Запросить СМС повторно">
+                                            <color key="titleColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestSMSAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mzE-pA-2Ce"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="BME-UF-jN7">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pHF-1y-8Bz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="1g8-MD-5HT"/>
+                            <constraint firstItem="BME-UF-jN7" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="B6t-xd-jr4"/>
+                            <constraint firstItem="BME-UF-jN7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Cf8-bl-zkV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pHF-1y-8Bz" secondAttribute="trailing" constant="32" id="X6C-kY-fyt"/>
+                            <constraint firstItem="pHF-1y-8Bz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="jff-vI-hjw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="BME-UF-jN7" id="v8x-cf-Zf9"/>
+                        <outlet property="codeTextField" destination="Kow-oI-CkW" id="KEe-kH-lO2"/>
+                        <outlet property="infoLabel" destination="t82-bf-12H" id="BDF-91-yAl"/>
+                        <outlet property="requestSMSButton" destination="Ckz-xO-v5p" id="1aM-L7-2BV"/>
+                        <outlet property="timerLabel" destination="3J3-W6-WHa" id="cQy-sn-a2e"/>
+                        <outlet property="titleLabel" destination="yqb-vg-ocp" id="HHO-1f-2EA"/>
+                        <outlet property="wrongCodeLabel" destination="aja-4t-vWg" id="Ng6-zd-9DF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

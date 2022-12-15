@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Bold.ttf">
+            <string>Ekibastuz-Bold</string>
+        </array>
+        <array key="Ekibastuz-Heavy.ttf">
+            <string>Ekibastuz-Heavy</string>
+        </array>
+        <array key="Ekibastuz-Regular.ttf">
+            <string>Ekibastuz-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AuthViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IiN-lv-Vta">
+                                <rect key="frame" x="32" y="222" width="350" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IiN-lv-Vta" secondAttribute="height" multiplier="175:61" id="clD-4a-fMg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yRd-gi-vub">
+                                <rect key="frame" x="32" y="632" width="350" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер телефона, мы отправим вам СМС для подтверждения" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB1-fH-OyX">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Bold" family="Ekibastuz" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tQB-Uc-uJz">
+                                        <rect key="frame" x="0.0" y="43.5" width="350" height="62.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер телефона" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ld-s1-hU7">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="11.5"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="c3Y-Tq-ADh">
+                                                <rect key="frame" x="0.0" y="16.5" width="350" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-FR-mNW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="23" height="40"/>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(000) 000-00-00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-JL-Tig" customClass="TVMaskTextField" customModule="TVMaskField">
+                                                        <rect key="frame" x="26" y="0.0" width="305" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="RYH-0T-s3J"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="(000) 000-00-00"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="ORX-uc-xek">
+                                                        <rect key="frame" x="334" y="0.0" width="16" height="40"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUY-Si-YUJ">
+                                                <rect key="frame" x="0.0" y="61.5" width="350" height="1"/>
+                                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="bAx-B4-fQ3"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-7a-gYs">
+                                        <rect key="frame" x="0.0" y="121" width="350" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXD-WK-kh0">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="8xs-nh-u0x"/>
+                                                    <constraint firstAttribute="height" constant="40" id="fBd-aU-WdC"/>
+                                                </constraints>
+                                                <state key="normal" image="checkbox_unselected"/>
+                                                <state key="selected" image="checkbox_selected"/>
+                                                <connections>
+                                                    <action selector="checkBoxButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6GY-Sy-FWd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="adA-QK-5Ol">
+                                                <rect key="frame" x="55" y="0.0" width="295" height="40"/>
+                                                <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="13"/>
+                                                <state key="normal" title="Соглашение на обработку персональных данных">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="webLinkButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="95l-QU-QVF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjX-IA-ae4">
+                                        <rect key="frame" x="0.0" y="176" width="350" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27450980390000002" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="D8G-PF-kRt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ekibastuz-Heavy" family="Ekibastuz" pointSize="15"/>
+                                        <state key="normal" title="Подтвердить телефон">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmPhoneButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="plR-sf-A4b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FxY-HF-FRo">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IiN-lv-Vta" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-165" id="132-3P-IdY"/>
+                            <constraint firstItem="yRd-gi-vub" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="BZU-Hz-KxG"/>
+                            <constraint firstItem="FxY-HF-FRo" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="CjY-W5-zNg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IiN-lv-Vta" secondAttribute="trailing" constant="32" id="MW1-ir-tF9"/>
+                            <constraint firstItem="yRd-gi-vub" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-10" id="WEK-o9-uEd"/>
+                            <constraint firstItem="IiN-lv-Vta" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="b2m-Rf-F8G"/>
+                            <constraint firstItem="FxY-HF-FRo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hey-I7-m3h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yRd-gi-vub" secondAttribute="trailing" constant="32" id="zj2-hf-wCh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="FxY-HF-FRo" id="8Ld-qc-Hgg"/>
+                        <outlet property="checkBoxButton" destination="uXD-WK-kh0" id="By9-XK-doe"/>
+                        <outlet property="checkMarkImage" destination="ORX-uc-xek" id="Inq-33-bVt"/>
+                        <outlet property="confirmPhoneButton" destination="YjX-IA-ae4" id="mEj-ur-i8f"/>
+                        <outlet property="infoLabel" destination="xB1-fH-OyX" id="Ma8-9j-gui"/>
+                        <outlet property="logoCenterConstraint" destination="132-3P-IdY" id="CGm-6p-ElN"/>
+                        <outlet property="logoImageView" destination="IiN-lv-Vta" id="txA-Xc-EA2"/>
+                        <outlet property="logoTrailingConstraint" destination="MW1-ir-tF9" id="edm-IZ-naA"/>
+                        <outlet property="phoneInfoLabel" destination="1ld-s1-hU7" id="Idh-XP-Fdc"/>
+                        <outlet property="phoneMaskTextField" destination="sMm-JL-Tig" id="Ktj-3R-Tay"/>
+                        <outlet property="phonePrefixLabel" destination="hlQ-FR-mNW" id="wSI-Vk-w2f"/>
+                        <outlet property="webLinkButton" destination="adA-QK-5Ol" id="3f4-Ic-nmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkMark" width="16" height="12"/>
+        <image name="checkbox_selected" width="32" height="32"/>
+        <image name="checkbox_unselected" width="32" height="32"/>
+        <image name="logo" width="311" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

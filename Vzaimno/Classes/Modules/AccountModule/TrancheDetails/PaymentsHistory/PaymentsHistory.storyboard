@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekibastuz-Regular.ttf">
+            <string>Ekibastuz-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payments History View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PaymentsHistoryViewController" customModule="Vzaimno" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-03-HJy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentsHistoryCell" id="xNP-6d-si5" customClass="PaymentsHistoryCell" customModule="Vzaimno" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="177.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xNP-6d-si5" id="u1y-7e-fvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="177.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwd-H0-Tfz">
+                                                    <rect key="frame" x="0.0" y="169.5" width="414" height="8"/>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="8" id="TCd-N5-lol"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AfV-ai-OQW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="177.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GLI-NE-v9d">
+                                                            <rect key="frame" x="32" y="16" width="350" height="27.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65S-vP-tf8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="256.5" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="20.08.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hex-h6-DQy">
+                                                                    <rect key="frame" x="264.5" y="0.0" width="85.5" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-07-JKb">
+                                                            <rect key="frame" x="32" y="55.5" width="350" height="27.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBE-2S-6dK">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="266" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="14 840.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6In-2i-IF7">
+                                                                    <rect key="frame" x="274" y="0.0" width="76" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-dD-Soh">
+                                                            <rect key="frame" x="32" y="95" width="350" height="27"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Основной Долг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSp-dE-9rs">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="279.5" height="27"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="6950.54" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-gY-bDU">
+                                                                    <rect key="frame" x="287.5" y="0.0" width="62.5" height="27"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IlF-8O-uBU">
+                                                            <rect key="frame" x="32" y="134" width="350" height="27.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проценты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTo-2M-8qa">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="279.5" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="7890.35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp5-Qu-pQV">
+                                                                    <rect key="frame" x="287.5" y="0.0" width="62.5" height="27.5"/>
+                                                                    <fontDescription key="fontDescription" name="Ekibastuz-Regular" family="Ekibastuz" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <edgeInsets key="layoutMargins" top="16" left="32" bottom="16" right="32"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mwd-H0-Tfz" firstAttribute="leading" secondItem="u1y-7e-fvg" secondAttribute="leading" id="9EB-i7-ERr"/>
+                                                <constraint firstAttribute="bottom" secondItem="mwd-H0-Tfz" secondAttribute="bottom" id="N6q-7z-XkA"/>
+                                                <constraint firstItem="AfV-ai-OQW" firstAttribute="top" secondItem="u1y-7e-fvg" secondAttribute="top" id="Ukh-2O-atC"/>
+                                                <constraint firstAttribute="trailing" secondItem="mwd-H0-Tfz" secondAttribute="trailing" id="WQS-5o-rh9"/>
+                                                <constraint firstAttribute="bottom" secondItem="AfV-ai-OQW" secondAttribute="bottom" id="bWT-gd-VQE"/>
+                                                <constraint firstAttribute="trailing" secondItem="AfV-ai-OQW" secondAttribute="trailing" id="boc-aV-dli"/>
+                                                <constraint firstItem="AfV-ai-OQW" firstAttribute="leading" secondItem="u1y-7e-fvg" secondAttribute="leading" id="mXe-st-fqs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="hex-h6-DQy" id="euC-mg-Oma"/>
+                                            <outlet property="procLabel" destination="Yp5-Qu-pQV" id="1xx-gV-k75"/>
+                                            <outlet property="summLabel" destination="6In-2i-IF7" id="9ub-hq-Q65"/>
+                                            <outlet property="teloLabel" destination="Iwm-gY-bDU" id="ZgJ-KT-XIQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="wnn-2s-qEX"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="5WK-1n-XGd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qTH-03-HJy" secondAttribute="bottom" id="7UO-ww-7D6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="qTH-03-HJy" secondAttribute="top" constant="44" id="Igc-DE-Inr"/>
+                            <constraint firstItem="qTH-03-HJy" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Pgb-LT-H5B"/>
+                            <constraint firstItem="qTH-03-HJy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qEv-C8-KHn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="qTH-03-HJy" id="zqB-gE-7zz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
